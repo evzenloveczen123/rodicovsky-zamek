@@ -1,0 +1,44 @@
+{
+  "name": "rodicovsky-zamek",
+  "version": "1.0.0",
+  "description": "Rodičovský zámek – místo zabavení telefonu ho jen zamkněte. Open-source Android aplikace bez reklam.",
+  "license": "MIT",
+  "author": "evzenloveczen123",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evzenloveczen123/rodicovsky-zamek.git"
+  },
+  "bugs": "https://github.com/evzenloveczen123/rodicovsky-zamek/issues",
+  "homepage": "https://github.com/evzenloveczen123/rodicovsky-zamek#readme",
+  "keywords": [
+    "parental-control",
+    "android",
+    "expo",
+    "react-native",
+    "screen-time",
+    "kiosk"
+  ],
+  "main": "index.ts",
+  "dependencies": {
+    "expo": "~58.0.24",
+    "expo-linear-gradient": "~58.0.4",
+    "expo-splash-screen": "~58.0.14",
+    "expo-status-bar": "~58.0.5",
+    "react": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-safe-area-context": "~5.11.1",
+    "react-native-svg": "15.16.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "typecheck": "tsc --noEmit",
+    "doctor": "expo-doctor"
+  },
+  "private": true
+}

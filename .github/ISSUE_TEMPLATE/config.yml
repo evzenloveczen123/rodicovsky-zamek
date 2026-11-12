@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔐 Způsob, jak obejít zámek (bezpečnostní chyba)
+    url: https://github.com/evzenloveczen123/rodicovsky-zamek/security/advisories/new
+    about: Hlaste soukromě, ne jako veřejné issue.

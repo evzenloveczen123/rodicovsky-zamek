@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Rodičovský zámek",
+    "slug": "rodicovsky-zamek",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "cz.rodicovskyzamek.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#4A35C8",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "cz.rodicovskyzamek.app"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 160,
+          "resizeMode": "contain",
+          "backgroundColor": "#F3F4FA"
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}

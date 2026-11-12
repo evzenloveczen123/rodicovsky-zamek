@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="focus_lock_service_label">Rodičovský zámek</string>
+  <string name="focus_lock_service_description">Když rodič zapne zámek, tato služba hlídá, aby šly otevřít jen povolené aplikace (volání, SMS, Google…). Nečte obsah obrazovky a nikam neposílá žádná data.</string>
+  <string name="focus_lock_admin_explanation">Brání odinstalování Rodičovského zámku bez vědomí rodiče.</string>
+  <string name="focus_lock_admin_disable_warning">Vypnutím této ochrany půjde Rodičovský zámek odinstalovat. Pokračujte jen pokud jste rodič.</string>
+</resources>

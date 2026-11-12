@@ -1,0 +1,41 @@
+name: Release
+
+# Push a tag like v1.0.0 to build the APK and publish a GitHub release with it.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: gradle
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npx expo prebuild --platform android --no-install
+      - name: Build release APK
+        working-directory: android
+        run: ./gradlew assembleRelease --no-daemon -PreactNativeArchitectures=arm64-v8a,armeabi-v7a
+      - name: Rename APK
+        run: cp android/app/build/outputs/apk/release/app-release.apk "rodicovsky-zamek-${GITHUB_REF_NAME}.apk"
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: rodicovsky-zamek-*.apk
+          generate_release_notes: true
+          body: |
+            ## Instalace
+            Stáhněte APK níže a otevřete ho v telefonu s Androidem 8 nebo novějším. Postup nastavení je v [README](https://github.com/${{ github.repository }}#jak-to-funguje).
+
+            > APK je podepsané vývojovým klíčem. Před aktualizací z jiného zdroje (např. Google Play) bude potřeba aplikaci odinstalovat.

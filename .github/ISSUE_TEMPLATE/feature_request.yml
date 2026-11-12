@@ -1,0 +1,21 @@
+name: 💡 Nápad na vylepšení
+description: Navrhněte novou funkci
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Jaký problém to řeší?
+      placeholder: Jako rodič bych chtěl…
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Navrhované řešení
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Zvažované alternativy

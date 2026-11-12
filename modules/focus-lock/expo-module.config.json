@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android"],
+  "apple": {
+    "modules": ["FocusLockModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.focuslock.FocusLockModule"]
+  }
+}
