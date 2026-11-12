@@ -60,7 +60,10 @@ Dítě může volat, psát SMS a používat základní aplikace. Hry, videa a so
 
 ## Instalace
 
-Stáhněte `app-release.apk` z [posledního vydání](https://github.com/evzenloveczen123/rodicovsky-zamek/releases/latest) a otevřete ho v telefonu. Android se zeptá, jestli povolit instalaci z neznámého zdroje.
+Stáhněte `rodicovsky-zamek-vX.Y.Z.apk` z [posledního vydání](https://github.com/evzenloveczen123/rodicovsky-zamek/releases/latest) a otevřete ho v telefonu. Android se zeptá, jestli povolit instalaci z neznámého zdroje.
+
+**Aktualizace:** novou verzi stačí nainstalovat přes starou, PIN i nastavení zůstanou. Oficiální APK jsou podepsaná klíčem projektu. Android jinak podepsanou „aktualizaci“ odmítne nainstalovat, takže ji dítě nemůže podvrhnout. Otisk certifikátu (SHA-256):
+`3d:ce:36:f1:e2:1e:a4:1a:08:a3:22:20:f6:c0:68:b4:c4:43:fa:86:a0:a7:e2:07:ca:8b:0b:fe:aa:09:9f:8c`
 
 ## Vývoj
 
@@ -79,6 +82,10 @@ npx expo prebuild --platform android
 cd android && ./gradlew assembleRelease
 # → android/app/build/outputs/apk/release/app-release.apk
 ```
+
+Bez proměnných `ANDROID_KEYSTORE_FILE`, `ANDROID_KEYSTORE_PASSWORD` a `ANDROID_KEY_ALIAS` se release podepíše vývojovým klíčem (viz `plugins/withReleaseSigning.js`). Takové APK nejde nainstalovat přes oficiální verzi.
+
+**Vydání nové verze:** zvyšte `version` a `android.versionCode` v `app.json` a `version` v `package.json`, doplňte `CHANGELOG.md` a pushněte tag `vX.Y.Z`. Workflow *Release* sestaví podepsané APK a vytvoří vydání.
 
 ### Struktura
 

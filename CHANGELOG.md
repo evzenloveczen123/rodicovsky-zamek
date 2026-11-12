@@ -15,5 +15,6 @@ Všechny podstatné změny projektu. Formát vychází z [Keep a Changelog](http
 - Přehled pokusů o otevření zakázaných aplikací.
 - Ochrana proti odinstalování (správce zařízení) a blokování Nastavení a Obchodu Play.
 - Skrytí ze seznamu nedávných aplikací během zámku.
+- Vydaná APK jsou podepsaná vlastním klíčem projektu, aktualizace se instalují přes starou verzi.
 
 [1.0.0]: https://github.com/evzenloveczen123/rodicovsky-zamek/releases/tag/v1.0.0

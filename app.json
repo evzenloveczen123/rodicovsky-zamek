@@ -18,7 +18,8 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "cz.rodicovskyzamek.app"
+      "package": "cz.rodicovskyzamek.app",
+      "versionCode": 1
     },
     "plugins": [
       [
@@ -30,7 +31,8 @@
           "backgroundColor": "#F3F4FA"
         }
       ],
-      "expo-status-bar"
+      "expo-status-bar",
+      "./plugins/withReleaseSigning"
     ]
   }
 }
