@@ -13,7 +13,7 @@ Dítě může volat, psát SMS a používat základní aplikace. Hry, videa a so
 ![iOS](https://img.shields.io/badge/iOS-p%C5%99ipravuje%20se-lightgrey?logo=apple)
 ![Bez reklam](https://img.shields.io/badge/reklamy-%C5%BE%C3%A1dn%C3%A9-17A34A)
 
-[**⬇️ Stáhnout APK**](https://github.com/evzenloveczen123/rodicovsky-zamek/releases/latest) · [Jak to funguje](#jak-to-funguje) · [Vývoj](#vývoj) · [English](#english)
+[**⬇️ Stáhnout APK**](https://github.com/evzenloveczen123/rodicovsky-zamek/releases/latest) · [🌐 Web aplikace](https://evzenloveczen123.github.io/rodicovsky-zamek/) · [Jak to funguje](#jak-to-funguje) · [Vývoj](#vývoj) · [English](#english)
 
 </div>
 
